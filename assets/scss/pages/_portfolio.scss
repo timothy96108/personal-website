@@ -2,7 +2,7 @@
   padding-top: 104px;
 
   @include pad {
-    padding-top: 80px;
+    padding-top: 140px;
   }
 
   &-title {
@@ -49,7 +49,6 @@
     }
 
     &-decoration {
-      // background: url('/assets/images/mark.png') no-repeat bottom;
       position: relative;
 
       &::after {

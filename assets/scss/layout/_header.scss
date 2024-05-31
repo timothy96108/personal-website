@@ -10,16 +10,11 @@
     overflow: hidden;
   }
 
-  @include pad {
-    position: relative;
-  }
-
   &-collapse {
     @include pad {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      left: calc(50% - 16.8px);
+      transform: translateX(calc(-50% + 16.8px));
     }
   }
 }
