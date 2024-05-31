@@ -1,0 +1,91 @@
+.intro {
+  padding-top: 104px;
+
+  @include pad {
+    padding-top: 80px;
+  }
+
+  &-title {
+    width: 300px;
+    position: relative;
+
+    @include pad {
+      width: 65%;
+    }
+
+    @include desktop {
+      width: 50%;
+    }
+
+    &::before {
+      content: url('/assets/images/quote-left.png');
+      position: absolute;
+      display: block;
+      width: 64px;
+      height: 64px;
+      top: -72px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @include pad {
+      &::before {
+        width: 72px;
+        height: 72px;
+        top: -72px;
+        left: -72px;
+        transform: none;
+      }
+
+      &::after {
+        content: url('/assets/images/quote-right.png');
+        position: absolute;
+        display: block;
+        width: 72px;
+        height: 72px;
+        bottom: -72px;
+        right: -72px;
+      }
+    }
+
+    &-decoration {
+      // background: url('/assets/images/mark.png') no-repeat bottom;
+      position: relative;
+
+      &::after {
+        content: url('/assets/images/mark.png');
+        position: absolute;
+        bottom: -8px;
+        right: -24px;
+        z-index: -1;
+      }
+    }
+  }
+
+  &-list {
+    width: 260px;
+
+    @include pad {
+      width: 80%;
+    }
+
+    @include desktop {
+      width: 50%;
+    }
+  }
+
+  &-item-title {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background-color: $gray-400;
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

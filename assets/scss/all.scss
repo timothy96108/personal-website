@@ -22,5 +22,10 @@
 @import './layout/header';
 @import './layout/footer';
 
+// Components
+@import './components/card';
+@import './components/label';
+
 // Pages
 @import './pages/index';
+@import './pages/portfolio';
