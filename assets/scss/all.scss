@@ -1,0 +1,20 @@
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/functions';
+@import './utils/variables';
+@import '../../node_modules/bootstrap';
+
+// Customize helpers
+@import './helpers';
+
+// Utilities
+@import '../../node_modules/bootstrap/scss/utilities/api';
+
+// Customize base
+@import './base';
+
+// Layout
+@import './layout/header';
+@import './layout/footer';
+
+// Pages
+@import './pages/index';
