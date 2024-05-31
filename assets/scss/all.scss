@@ -15,6 +15,9 @@
 // Customize base
 @import './base';
 
+// RWD breakpoints
+@import './mixin';
+
 // Layout
 @import './layout/header';
 @import './layout/footer';
