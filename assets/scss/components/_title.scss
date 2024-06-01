@@ -1,0 +1,37 @@
+.title {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    top: -4px;
+  }
+
+  &::before {
+    content: url('/assets/images/title-deco-left-sm.png');
+    left: calc(50% - 120px);
+  }
+
+  &::after {
+    content: url('/assets/images/title-deco-right-sm.png');
+    right: calc(50% - 120px);
+  }
+
+  @include desktop {
+    &::before,
+    &::after {
+      top: -8px;
+    }
+
+    &::before {
+      content: url('/assets/images/title-deco-left-lg.png');
+      left: calc(50% - 180px);
+    }
+
+    &::after {
+      content: url('/assets/images/title-deco-right-lg.png');
+      right: calc(50% - 180px);
+    }
+  }
+}

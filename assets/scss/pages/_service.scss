@@ -1,0 +1,33 @@
+.service {
+  &-item {
+    max-width: 306px;
+    width: 100%;
+    background: url('/assets/images/service-item-bg.png') no-repeat;
+    background-size: cover;
+
+    &::after {
+      content: '';
+      display: block;
+      padding-bottom: 100%;
+    }
+  }
+
+  &-process {
+    background: url('/assets/images/process-bg.png') no-repeat center center;
+    background-size: cover;
+
+    &-step {
+      font-family: 'Tourney', sans-serif;
+      font-size: 3rem;
+
+      @include pad {
+        font-size: 4.5rem;
+      }
+    }
+  }
+}
+
+.hyphen {
+  width: 28px;
+  border: 1px solid $gray-400;
+}
