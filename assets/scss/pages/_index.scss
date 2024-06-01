@@ -117,3 +117,10 @@
     z-index: 2;
   }
 }
+
+.service-bg {
+  @include desktop {
+    background: url('/assets/images/homepage-services-bg.png') no-repeat center;
+    background-size: cover;
+  }
+}

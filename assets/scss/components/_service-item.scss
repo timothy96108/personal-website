@@ -1,0 +1,11 @@
+.service-item {
+  max-width: 306px;
+  background: url('/assets/images/service-item-bg.png') no-repeat;
+  background-size: cover;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+}
