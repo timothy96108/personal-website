@@ -4,7 +4,35 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <main class="pt-14 pt-md-24"></main>
+    <main class="pt-14 pt-md-24">
+      <div class="hero d-flex flex-column flex-lg-row-reverse">
+        <div class="hero-image mb-10 mb-lg-0"></div>
+        <div class="hero-text d-flex flex-column justify-content-lg-center align-items-lg-center">
+          <div class="text-center text-lg-start">
+            <h2 class="fs-2 fw-bold mb-6">Hi！我是 Noel</h2>
+            <p class="fs-5">
+              具有 10 年經驗的<br class="d-lg-none" /><span class="hero-text-decoration position-relative">資深 UI 設計師</span>兼<span class="hero-text-decoration position-relative">前端工程師</span><br />
+              技術雙修並行，<br class="d-lg-none" />熱衷於優化使用者的網頁體驗
+            </p>
+            <p class="text-gray-400 mb-6">
+              WEB DEVELOPMENT / BRANDING / <br class="d-lg-none" />
+              UI / UX / APP DESIGN
+            </p>
+          </div>
+          <ul class="list-unstyled d-flex justify-content-center justify-content-lg-start mb-0">
+            <li class="me-4">
+              <a href="#"><img src="/assets/images/instagram.svg" alt="instagram icon" class="hero-sns-link" /></a>
+            </li>
+            <li class="me-4">
+              <a href="#"><img src="/assets/images/facebook.svg" alt="facebook icon" class="hero-sns-link" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="/assets/images/youtube.svg" alt="youtube icon" class="hero-sns-link" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
 
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>

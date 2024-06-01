@@ -1,0 +1,46 @@
+.hero {
+  &-image {
+    width: 100%;
+    padding-bottom: 76%;
+    background: url('/assets/images/hero-sm.png') no-repeat center;
+    background-size: cover;
+
+    @include desktop {
+      width: 50%;
+      padding-bottom: 50%;
+      background-image: url('/assets/images/hero-lg.png');
+    }
+
+    @media (min-width: 1400px) {
+      width: 66.67%;
+    }
+  }
+
+  &-text {
+    @include desktop {
+      width: 50%;
+    }
+
+    @media (min-width: 1400px) {
+      width: 33.33%;
+    }
+
+    &-decoration {
+      &::after {
+        content: url('/assets/images/mark.png');
+        position: absolute;
+        bottom: -8px;
+        left: -8px;
+        z-index: -1;
+      }
+    }
+  }
+
+  &-sns-link {
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
