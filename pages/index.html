@@ -267,9 +267,139 @@
           </div>
         </div>
       </div>
+
+      <div class="article container py-20 py-md-30">
+        <h2 class="title fs-4 fs-lg-2 fw-bold text-center mb-10 mb-md-16 mb-lg-20">精選文章</h2>
+        <div class="article-swiper swiper pb-md-10">
+          <ul class="swiper-wrapper list-unstyled">
+            <li class="swiper-slide">
+              <div class="card border-0">
+                <img src="/assets/images/article-image-1.png" alt="article image" class="card-img-top rounded-3" />
+                <div class="card-body">
+                  <h3 class="card-title fs-5 fw-bold mb-4">Vision Pro 登場！Vision Pro UI/UX 設計重點大公開（上）</h3>
+                  <div class="d-flex justify-content-between">
+                    <div class="label-item">
+                      <a href="#" class="label-link">UI / UX 新知</a>
+                    </div>
+                    <p class="text-gary-600">2024/02/10</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="card border-0">
+                <img src="/assets/images/article-image-2.png" alt="article image" class="card-img-top rounded-3" />
+                <div class="card-body">
+                  <h3 class="card-title fs-5 fw-bold mb-4">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南（下）</h3>
+                  <div class="d-flex justify-content-between">
+                    <div class="label-item">
+                      <a href="#" class="label-link">UI / UX 新知</a>
+                    </div>
+                    <p class="text-gary-600">2023/11/20</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="card border-0">
+                <img src="/assets/images/article-image-3.png" alt="article image" class="card-img-top rounded-3" />
+                <div class="card-body">
+                  <h3 class="card-title fs-5 fw-bold mb-4">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南（上）</h3>
+                  <div class="d-flex justify-content-between">
+                    <div class="label-item">
+                      <a href="#" class="label-link">UI / UX 新知</a>
+                    </div>
+                    <p class="text-gary-600">2023/10/18</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="card border-0">
+                <img src="/assets/images/article-image-4.png" alt="article image" class="card-img-top rounded-3" />
+                <div class="card-body">
+                  <h3 class="card-title fs-5 fw-bold mb-4">虛擬實境（VR）介面設計對使用者沈浸感影響的研究</h3>
+                  <div class="d-flex justify-content-between">
+                    <div class="label-item">
+                      <a href="#" class="label-link">數位產品設計</a>
+                    </div>
+                    <p class="text-gary-600">2023/09/20</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="card border-0">
+                <img src="/assets/images/article-image-5.png" alt="article image" class="card-img-top rounded-3" />
+                <div class="card-body">
+                  <h3 class="card-title fs-5 fw-bold mb-4">想打到目標受眾？先讓設計師跟你都瞭解他們痛在哪！</h3>
+                  <div class="d-flex justify-content-between">
+                    <div class="label-item">
+                      <a href="#" class="label-link">數位產品設計</a>
+                    </div>
+                    <p class="text-gary-600">2023/08/10</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="card border-0">
+                <img src="/assets/images/article-image-6.png" alt="article image" class="card-img-top rounded-3" />
+                <div class="card-body">
+                  <h3 class="card-title fs-5 fw-bold mb-4">React vs. Vue，哪種前端框架比較好用？從三大面向談起</h3>
+                  <div class="d-flex justify-content-between">
+                    <div class="label-item">
+                      <a href="#" class="label-link">前端開發</a>
+                    </div>
+                    <p class="text-gary-600">2023/07/03</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination d-flex justify-content-center gap-4"></div>
+        </div>
+        <button type="button" class="btn btn-dark btn-lg d-block d-md-none mx-auto">
+          <div class="d-flex align-items-center">
+            <span class="me-2">更多文章</span>
+            <span class="material-symbols-rounded">arrow_forward</span>
+          </div>
+        </button>
+      </div>
     </main>
 
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+
+      const swiper = new Swiper('.article-swiper', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        grid: {
+          rows: 3,
+        },
+        breakpoints: {
+          768: {
+            grid: {
+              rows: 1,
+            },
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 24,
+          },
+          992: {
+            grid: {
+              rows: 1,
+            },
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 24,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

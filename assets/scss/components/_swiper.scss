@@ -1,0 +1,25 @@
+.swiper {
+  &-pagination {
+    &-bullet {
+      width: 12px;
+      height: 12px;
+      margin: 0 !important;
+
+      &-active {
+        background: $dark;
+      }
+    }
+  }
+
+  &-slide {
+    &:nth-child(n + 4) {
+      display: none;
+    }
+
+    @include pad {
+      &:nth-child(n + 4) {
+        display: list-item;
+      }
+    }
+  }
+}
