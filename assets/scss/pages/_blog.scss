@@ -1,0 +1,35 @@
+.article {
+  &-tag {
+    @include desktop {
+      position: relative;
+
+      &::after {
+        content: '>';
+        position: absolute;
+        right: -14px;
+      }
+    }
+  }
+
+  &-item {
+    max-width: 80%;
+    margin: 0 auto;
+
+    @media (min-width: 1200px) {
+      max-width: 100%;
+    }
+  }
+
+  &-img {
+    object-fit: cover;
+  }
+
+  &-abstract {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+  }
+}

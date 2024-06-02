@@ -1,0 +1,38 @@
+.article {
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    @include desktop {
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+
+    @include desktop {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  figure {
+    margin-bottom: 2rem;
+
+    @include desktop {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    color: $gray-600;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+}

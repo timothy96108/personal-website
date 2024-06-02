@@ -1,0 +1,22 @@
+.scrollbar {
+  overflow-x: scroll;
+
+  @include desktop {
+    height: 100%;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &-link {
+    color: $gray-600;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $dark;
+      border-bottom-color: $dark;
+    }
+  }
+}
