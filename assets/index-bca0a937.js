@@ -1,0 +1,1 @@
+import"./bootstrap.min-7e1402ec.js";import e from"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";new e(".article-swiper",{pagination:{el:".swiper-pagination",clickable:!0},grid:{rows:3},breakpoints:{768:{grid:{rows:1},slidesPerView:2,slidesPerGroup:2,spaceBetween:24},992:{grid:{rows:1},slidesPerView:3,slidesPerGroup:3,spaceBetween:24}}});
